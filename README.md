@@ -1,6 +1,6 @@
-# Week - 4
+## Week - 4
 
-# Homework 
+## Homework 
 
 İş Yönetim Sistemi
 
@@ -18,11 +18,11 @@
 - İş Üzerinden Yazışma : Request'e ait Reporter User ile Assignee User arasında mesajlaşma yapılabilir. Bunların dışındaki kullanıcılar mesajları göremez ve mesajlaşmaya dahil olamaz. Mesaj yazmak veya görmek isteyen kullanıcı ilgili requestte Reporter veya Assignee ise Sender veya Receiver olabilir.
 - İş Detaylarının Görüntülenmesi : Admin veya Yönetici bir requestin mesajlaşmalar dahil tüm detaylarını görebilir.
 
-## Veritabanı 
+## Database 
 
 ![](https://github.com/GelecekVarlik-FullStack-Bootcamp/odev-hafta4-dnet-malitunay/blob/main/diagram.png)
 
-## Metodlar
+## Methods
 
 #### 1. Oturum Açma (Account/Login)
 
@@ -325,7 +325,7 @@ Başarılı Sonuç Örneği:
     }
 	}
 
-## Kullanım Kılavuzu
+## How to Use
 
 1. Uygulama dosyalarını locale indirin.
 2. Veritabanı yedeğini restore edin.
