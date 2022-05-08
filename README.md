@@ -7,15 +7,6 @@
 
 ## Homework Description
 
-- Bir işyerindeki iş takiplerinin yapılabilmesi için geliştirilecek uygulamadır
-- Program, küçük veya orta ölçekli işyerlerine hitap edecektir
-- İlgili kişiler tarafından işlerin açılması ve işi alan veya iş atanan kişinin işi çözmesi beklenmektedir.
-
-## Author
-
-- Mehmet Ali TUNAY
-
-### Uygulama İşlevleri
 - Login : E-Mail ve parola ile yapılır. (Veritabanında tutulan parolalar MD5 ile şifrelidir)
 - İsterler gereği register işlemi yapılmamıştır. Kullanıcılar "Admin" veya "Yönetici" rolündeki kullanıcılar tarafından eklenir.
 - Yeni kullanıcı kaydı yapıldığında; e-mail adresine 6 haneli random üretilmiş bir parola gönderilir ve bu parolanın md5 ile şifrelenmiş hali "Users" tablosuna kaydedilir.
@@ -27,13 +18,13 @@
 - İş Üzerinden Yazışma : Request'e ait Reporter User ile Assignee User arasında mesajlaşma yapılabilir. Bunların dışındaki kullanıcılar mesajları göremez ve mesajlaşmaya dahil olamaz. Mesaj yazmak veya görmek isteyen kullanıcı ilgili requestte Reporter veya Assignee ise Sender veya Receiver olabilir.
 - İş Detaylarının Görüntülenmesi : Admin veya Yönetici bir requestin mesajlaşmalar dahil tüm detaylarını görebilir.
 
-### Veritabanı 
+## Veritabanı 
 
 ![](https://pandao.github.io/editor.md/examples/images/4.jpg)
 
-### Metodlar
+## Metodlar
 
-##### 1. Oturum Açma (Account/Login)
+#### 1. Oturum Açma (Account/Login)
 
 Varsayılan olarak oluşturulan "Admin" rolündeki kullanıcı ile giriş yapılır.
 http://localhost:40183/api/Account/Login
@@ -61,7 +52,7 @@ Başarılı Sonuç Örneği:
         "accessToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhdEBnLmNvbSIsImp0aSI6IjIiLCJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3JvbGUiOiJBZG1pbiIsIm5iZiI6MTY1MjAwNTA1NSwiZXhwIjoxNjUyMDkxNDU1LCJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjQwMTgzIiwiYXVkIjoiaHR0cDovL2xvY2FsaG9zdDo0MDE4MyJ9.4gHAjP0WvO3FXxjaU8sk3_JImNnSSwPyF3nnoJIw0S8"
     }
 	}
-##### 2. Kullanıcı Ekleme (User/AddUser)
+#### 2. Kullanıcı Ekleme (User/AddUser)
 
 Admin veya Yönetici rollerindeki kullanıcılar kullanıcı ekleyebilir.
 http://localhost:40183/api/User/AddUser
@@ -92,7 +83,7 @@ Başarılı Sonuç Örneği:
         "telephone": "123123123"
    	 }
 	}
-##### 3. Şifre Yenileme (User/AddUser)
+#### 3. Şifre Yenileme (User/AddUser)
 
 Sisteme eklenen kullanıcı, e-mail adresine gelen parola ile oturum açtıktan sonra şifresini değiştirebilir. Eski şifre kontrolü yapılır.
 http://localhost:40183/api/User/ChangePassword
@@ -115,7 +106,7 @@ Başarılı Sonuç Örneği:
 		}
 	}
 
-##### 4. Request Oluşturma (Request/CreateRequest)
+#### 4. Request Oluşturma (Request/CreateRequest)
 
 Sistemdeki tüm kullanıcılar departman id göndererek request açabilir.
 http://localhost:40183/api/Request/CreateRequest
@@ -152,7 +143,7 @@ Başarılı Sonuç Örneği: (AssigneeId değeri geri dönmez, veritabanında un
     	}
 	}
 
-##### 5. Departmana Göre Request Listeleme (Request/GetListByDepartmentOfUserId)
+#### 5. Departmana Göre Request Listeleme (Request/GetListByDepartmentOfUserId)
 
 Login olan kullanıcının bağlı olduğu departmana açılmış olan requestleri listeler. Parametre almaz. Login olan kullanıcının bilgilerini otomatik olarak çeker ve listeleme işlemini kullanıcı bilgilerinden giderek onun departmanına göre yapar.
 http://localhost:40183/api/Request/GetListByDepartmentOfUserId
@@ -192,7 +183,7 @@ Başarılı Sonuç Örneği:
     ]
 	}
 
-##### 6. Request'i Üzerine Alma (Request/TakeRequest)
+#### 6. Request'i Üzerine Alma (Request/TakeRequest)
 
 Login olan kullanıcı kendi departmanına açılmış olan requesti üzerine alabilir. Parametre olarak ilgili request'in id değeri gönderilmelidir. Login olan kullanıcının id değeri ilgili requestin "AssigneeId" alanına yazılır. Kullanıcı sadece başka bir kullanıcıya assign edilmemiş requestleri kendi üzerine alabilir.
 http://localhost:40183/api/Request/TakeRequest?id=REQUESTID
@@ -217,7 +208,7 @@ Başarılı Sonuç Örneği: (AssigneeId : 45)
     }
 	}
 
-##### 7. Belli Bir Kullanıcıya Assign Edilmiş Requestleri Listeleme (Request/CreateRequest)
+#### 7. Belli Bir Kullanıcıya Assign Edilmiş Requestleri Listeleme (Request/CreateRequest)
 
 Admin veya Yönetici rolündeki kullanıcılar belli bir kullanıcıya assign edilmiş requestleri listeleyebilir. Parametre olarak ilgili kullanıcının User Id değeri gönderilir.
 http://localhost:40183/api/Request/GetOwnListByAssigneeId?id=USERID
@@ -257,7 +248,7 @@ Başarılı Sonuç Örneği: (Id değeri 45 olan kullanıcıya Assign edilmiş r
     ]
 	}
 
-##### 8. Request Üzerinden Mesaj Gönderme (Message/SendMessage)
+#### 8. Request Üzerinden Mesaj Gönderme (Message/SendMessage)
 
 Assign edilmiş bir request üzerinden requst'i açan Reporter User ile Assignee User mesajlaşabilir. İlgili request'in Reporter User ve Assignee User ları Messages tablosunda Sender veya Receiver olarak kaydedilir. 
 Sender; o anda login olan kullanıcıdır. Bu kullanıcının ilgili request'te assignee veya reporter olup olmadığı kontrol edilir. Eğer ikisinden birisi ise Messages tablosunda SenderId alanına o kullanıcının id değeri yazılır. 
@@ -288,7 +279,7 @@ http://localhost:40183/api/Message/SendMessage
     }
 	}
   
-##### 9. Request'in Detaylarını Görüntüleme (Request/GetRequestDetail)
+#### 9. Request'in Detaylarını Görüntüleme (Request/GetRequestDetail)
 
 Kullanıcılar belli bir request'in tüm detaylarını, mesajlaşmalar ile birlikte görüntüleyebilir. Parametre olarak ilgili request'in Id değeri gönderilmelidir.
 
@@ -334,12 +325,13 @@ Başarılı Sonuç Örneği:
     }
 	}
 
-### Kullanım Kılavuzu
+## Kullanım Kılavuzu
 
 1. Uygulama dosyalarını locale indirin.
 2. Veritabanı yedeğini restore edin.
 3. appsettings.json dosyasında ConnectionStrings > SqlServer > Server alanına veritabanını restore ettiğiniz local bilginizi yazın.
-=======
-# odev4
->>>>>>> 9b2e45c (Initial commit)
->>>>>>> 1045440 ('odev4-1')
+
+## Author
+
+- Mehmet Ali TUNAY
+
