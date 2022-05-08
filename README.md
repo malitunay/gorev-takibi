@@ -20,7 +20,7 @@
 
 ## Veritabanı 
 
-![](https://pandao.github.io/editor.md/examples/images/4.jpg)
+![](https://github.com/GelecekVarlik-FullStack-Bootcamp/odev-hafta4-dnet-malitunay/blob/main/diagram.png)
 
 ## Metodlar
 
