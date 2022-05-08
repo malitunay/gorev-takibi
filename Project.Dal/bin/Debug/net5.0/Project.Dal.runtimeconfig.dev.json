@@ -1,0 +1,8 @@
+{
+  "runtimeOptions": {
+    "additionalProbingPaths": [
+      "C:\\Users\\malit\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\malit\\.nuget\\packages"
+    ]
+  }
+}

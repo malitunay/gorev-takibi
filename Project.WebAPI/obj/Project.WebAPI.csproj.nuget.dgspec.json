@@ -1,0 +1,387 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\malit\\source\\bootcamp\\Project\\Project.WebAPI\\Project.WebAPI.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\malit\\source\\bootcamp\\Project\\Project.Bll\\Project.Bll.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\malit\\source\\bootcamp\\Project\\Project.Bll\\Project.Bll.csproj",
+        "projectName": "Project.Bll",
+        "projectPath": "C:\\Users\\malit\\source\\bootcamp\\Project\\Project.Bll\\Project.Bll.csproj",
+        "packagesPath": "C:\\Users\\malit\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\malit\\source\\bootcamp\\Project\\Project.Bll\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\malit\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "C:\\Users\\malit\\source\\bootcamp\\Project\\Project.Dal\\Project.Dal.csproj": {
+                "projectPath": "C:\\Users\\malit\\source\\bootcamp\\Project\\Project.Dal\\Project.Dal.csproj"
+              },
+              "C:\\Users\\malit\\source\\bootcamp\\Project\\Project.Entity\\Project.Entity.csproj": {
+                "projectPath": "C:\\Users\\malit\\source\\bootcamp\\Project\\Project.Entity\\Project.Entity.csproj"
+              },
+              "C:\\Users\\malit\\source\\bootcamp\\Project\\Project.Interface\\Project.Interface.csproj": {
+                "projectPath": "C:\\Users\\malit\\source\\bootcamp\\Project\\Project.Interface\\Project.Interface.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[11.0.1, )"
+            },
+            "MailKit": {
+              "target": "Package",
+              "version": "[3.2.0, )"
+            },
+            "Microsoft.AspNetCore.Authentication.JwtBearer": {
+              "target": "Package",
+              "version": "[5.0.16, )"
+            },
+            "Microsoft.AspNetCore.Http.Abstractions": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "MimeKit": {
+              "target": "Package",
+              "version": "[3.2.0, )"
+            },
+            "SendGrid": {
+              "target": "Package",
+              "version": "[9.27.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\malit\\source\\bootcamp\\Project\\Project.Dal\\Project.Dal.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\malit\\source\\bootcamp\\Project\\Project.Dal\\Project.Dal.csproj",
+        "projectName": "Project.Dal",
+        "projectPath": "C:\\Users\\malit\\source\\bootcamp\\Project\\Project.Dal\\Project.Dal.csproj",
+        "packagesPath": "C:\\Users\\malit\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\malit\\source\\bootcamp\\Project\\Project.Dal\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\malit\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "C:\\Users\\malit\\source\\bootcamp\\Project\\Project.Entity\\Project.Entity.csproj": {
+                "projectPath": "C:\\Users\\malit\\source\\bootcamp\\Project\\Project.Entity\\Project.Entity.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[5.0.15, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[5.0.15, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[5.0.15, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\malit\\source\\bootcamp\\Project\\Project.Entity\\Project.Entity.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\malit\\source\\bootcamp\\Project\\Project.Entity\\Project.Entity.csproj",
+        "projectName": "Project.Entity",
+        "projectPath": "C:\\Users\\malit\\source\\bootcamp\\Project\\Project.Entity\\Project.Entity.csproj",
+        "packagesPath": "C:\\Users\\malit\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\malit\\source\\bootcamp\\Project\\Project.Entity\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\malit\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[11.0.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\malit\\source\\bootcamp\\Project\\Project.Interface\\Project.Interface.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\malit\\source\\bootcamp\\Project\\Project.Interface\\Project.Interface.csproj",
+        "projectName": "Project.Interface",
+        "projectPath": "C:\\Users\\malit\\source\\bootcamp\\Project\\Project.Interface\\Project.Interface.csproj",
+        "packagesPath": "C:\\Users\\malit\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\malit\\source\\bootcamp\\Project\\Project.Interface\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\malit\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "C:\\Users\\malit\\source\\bootcamp\\Project\\Project.Entity\\Project.Entity.csproj": {
+                "projectPath": "C:\\Users\\malit\\source\\bootcamp\\Project\\Project.Entity\\Project.Entity.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\malit\\source\\bootcamp\\Project\\Project.WebAPI\\Project.WebAPI.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\malit\\source\\bootcamp\\Project\\Project.WebAPI\\Project.WebAPI.csproj",
+        "projectName": "Project.WebAPI",
+        "projectPath": "C:\\Users\\malit\\source\\bootcamp\\Project\\Project.WebAPI\\Project.WebAPI.csproj",
+        "packagesPath": "C:\\Users\\malit\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\malit\\source\\bootcamp\\Project\\Project.WebAPI\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\malit\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "C:\\Users\\malit\\source\\bootcamp\\Project\\Project.Bll\\Project.Bll.csproj": {
+                "projectPath": "C:\\Users\\malit\\source\\bootcamp\\Project\\Project.Bll\\Project.Bll.csproj"
+              },
+              "C:\\Users\\malit\\source\\bootcamp\\Project\\Project.Dal\\Project.Dal.csproj": {
+                "projectPath": "C:\\Users\\malit\\source\\bootcamp\\Project\\Project.Dal\\Project.Dal.csproj"
+              },
+              "C:\\Users\\malit\\source\\bootcamp\\Project\\Project.Interface\\Project.Interface.csproj": {
+                "projectPath": "C:\\Users\\malit\\source\\bootcamp\\Project\\Project.Interface\\Project.Interface.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "MailKit": {
+              "target": "Package",
+              "version": "[3.2.0, )"
+            },
+            "Microsoft.AspNetCore.Cors": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[5.0.15, )"
+            },
+            "MimeKit": {
+              "target": "Package",
+              "version": "[3.2.0, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[5.6.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.NETCore.App.Host.win-x64",
+              "version": "[5.0.12, 5.0.12]"
+            }
+          ],
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

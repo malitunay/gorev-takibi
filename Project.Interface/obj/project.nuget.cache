@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "jPNJER/kdqS5ldjEwB0GfZDJ5fowRQ3RJQXO8YLT6Cah2XlRbIxsY7eXBRrKdKPA/3HQFU7P40VwTxLgzckwBg==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\malit\\source\\bootcamp\\Project\\Project.Interface\\Project.Interface.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\malit\\.nuget\\packages\\automapper\\11.0.1\\automapper.11.0.1.nupkg.sha512",
+    "C:\\Users\\malit\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512"
+  ],
+  "logs": []
+}
